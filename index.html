@@ -1,0 +1,311 @@
+
+<!DOCTYPE html >
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAR COLECCTION - Toko Hewan</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #26352b;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #ffffff;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 10px #00000010;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #287447;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #26352b;
+            margin-left: 22px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #287447;
+        }
+
+        .hero {
+            min-height: 500px;
+            padding: 70px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 35px;
+            background: #edf7ee;
+        }
+
+        .hero-text {
+            max-width: 520px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            line-height: 1.2;
+            margin: 15px 0;
+        }
+
+        .hero p {
+            margin-bottom: 25px;
+            color: #536458;
+        }
+
+        .hero img {
+            width: 48%;
+            max-width: 520px;
+            border-radius: 25px;
+            object-fit: cover;
+        }
+
+        .button {
+            display: inline-block;
+            background: #287447;
+            color: white;
+            padding: 12px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 70px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .intro {
+            max-width: 650px;
+            margin: 0 auto 30px;
+            color: #647166;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 30px;
+        }
+
+        .card {
+            padding: 25px;
+            border-radius: 15px;
+            background: #f5f8f4;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin-bottom: 8px;
+        }
+
+        .about {
+            background: #f5f8f4;
+        }
+
+        .contact {
+            background: #edf7ee;
+        }
+
+        footer {
+            padding: 25px;
+            background: #203c2b;
+            color: white;
+            text-align: center;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero img {
+                width: 100%;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">🐾 RAR COLECCTION</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#layanan">Layanan</a>
+            <a href="#produk">Produk</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-text">
+                <p>SAHABAT TERBAIK HEWAN KESAYANGAN</p>
+                <h1>Sayangi Hewan, Berikan Perawatan Terbaik!</h1>
+                <p>
+                    Temukan makanan, perlengkapan, dan layanan
+                    perawatan untuk hewan kesayangan anda.
+                </p>
+                <a class="button" href="#produk">Lihat Produk</a>
+            </div>
+
+            <img
+                src="images/RAR COLECCTION.jpg"
+                alt="sahabat terbaik hewan kesayangan">
+        </section>
+
+        <section class="about" id="tentang">
+            <h2>Tentang Kami</h2>
+            <p class="intro">
+                RAR COLECCTION adalah toko hewan yang menyediakan
+                berbagai kebutuhan hewan peliharaan dengan
+                mengutamakan kualitas, kenyamanan, dan kasih sayang.
+            </p>
+        </section>
+
+        <section id="layanan">
+            <h2>Layanan Kami</h2>
+            <p class="intro">
+                Kami membantu Anda memberikan perawatan terbaik
+                untuk hewan kesayangan dan temukan hewan favoritmu untuk menjadi kan teman untuk anda.
+            </p>
+
+            <div class="cards">
+                <article class="card">
+                    <h3>temukan hewan favorit mu</h3>
+                    <p>Pilih hewan peliharaan yang kamu sukai dan temukan sahabat baru untuk dirawat dengan penuh kasih .</p>
+                </article>
+
+                <article class="card">
+                    <h3>Makanan Hewan</h3>
+                    <p>Pilihan makanan untuk hewan kesayangan anda.</p>
+                </article>
+
+                <article class="card">
+                    <h3>aksesoris</h3>
+                    <p>Perlengkapan untuk kenyamanan hewan Anda.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="about" id="produk">
+            <h2>Produk Pilihan</h2>
+            <p class="intro">
+                Berbagai kebutuhan untuk sahabat berbulu Anda.
+            </p>
+
+            <div class="cards">
+                <article class="card">
+                    <img
+                        src="images/kebutuhan-kelinci.jpeg"
+                        alt="kebutuhan kelinci">
+                    <h3>Makanan kelinci</h3>
+                    <p>kebutuhan nutrisi untuk kelinci.</p>
+                </article>
+
+                <article class="card">
+                    <img
+                        src="images/merawat-iguana.jpeg"
+                        alt="merawat iguana">
+                    <h3>merawat iguana</h3>
+                    <p>cara merawat iguana.</p>
+                </article>
+
+                <article class="card">
+                    <img
+                        src="images/merawat-marmut.jpeg"
+                        alt="merawat marmut">
+                    <h3>merawat marmut</h3>
+                    <p>cara merawat marmut.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact" id="kontak">
+            <h2>Hubungi Kami</h2>
+            <p class="intro">
+                Ingin mengetahui produk atau layanan kami?
+                Hubungi RAR COLECCTION melalui WhatsApp.
+            </p>
+
+            <a
+                class="button"
+                href="https://wa.me/6288214062201"
+                target="_blank"
+                rel="noopener noreferrer">
+                Hubungi via WhatsApp
+            </a>
+
+            <p style="margin-top: 15px;">
+                Alamat: Silakan isi alamat toko Anda
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 RAR COLECCTION - Toko Hewan. Semua hak dilindungi.</p>
+    </footer>
+
+</body>
+</html>
+```
